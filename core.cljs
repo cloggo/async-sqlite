@@ -2,7 +2,7 @@
   #_(:require-macros [cljs.core.async.macros :as m-async :refer [alt!]])
   (:require
    #_[cljs.core.async.impl.channels :refer [ManyToManyChannel]]
-   [async.core :as async]
+   [async.async.core :as async]
    [restify.const* :as const]
    [interop.core :as interop]
    [sqlite.core :as q]))
