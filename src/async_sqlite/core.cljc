@@ -16,12 +16,12 @@
                                                      err# " [Change not committed.]")}))
            predicate? (or predicate? `cljs-async.core/error?)]
        `(cljs-async.core/go-try
-         (-> (async.sqlite.core/begin-transaction ~db)
+         (-> (async-sqlite.core/begin-transaction ~db)
              (cljs-async.core/<?_ ~@body)
              (cljs-async.core/<!)
              (#(if (~predicate? %)
-                 (do (async.sqlite.core/rollback-transaction ~db)
+                 (do (async-sqlite.core/rollback-transaction ~db)
                      (~rollback-handler %))
-                 (do (async.sqlite.core/commit-transaction ~db)
+                 (do (async-sqlite.core/commit-transaction ~db)
                      (~commit-handler %)))))))))
 
