@@ -1,8 +1,8 @@
-(ns async.sqlite.core
+(ns async-sqlite.core
   #_(:require-macros [cljs.core.async.macros :as m-async :refer [alt!]])
   (:require
    #_[cljs.core.async.impl.channels :refer [ManyToManyChannel]]
-   [async.async.core :as async]
+   [cljs-async.core :as async]
    [restify.const* :as const]
    [interop.core :as interop]
    [sqlite.core :as q]))
