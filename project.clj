@@ -4,4 +4,5 @@
   :license {:name "MIT" }
   :source-paths ["src"]
   :dependencies [ [org.clojars.cloggo/cljs-async "0.1.2"]
+                  [org.clojars.cloggo/sqlite "0.1.0"]
                   [org.clojure/clojure "1.9.0"]])
