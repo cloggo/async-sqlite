@@ -3,7 +3,6 @@
   (:require
    #_[cljs.core.async.impl.channels :refer [ManyToManyChannel]]
    [cljs-async.core :as async]
-   [restify.const* :as const]
    [interop.core :as interop]
    [sqlite.core :as q]))
 

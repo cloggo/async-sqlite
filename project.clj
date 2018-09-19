@@ -1,4 +1,4 @@
-(defproject org.clojars.cloggo/async-sqlite "0.1.2"
+(defproject org.clojars.cloggo/async-sqlite "0.1.3"
   :description "orchestrate sqlite commands with core.async"
   :url "https://github.com/cloggo/async-sqlite"
   :license {:name "MIT" }
